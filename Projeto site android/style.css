@@ -1,0 +1,225 @@
+@charset "UTF-8";
+
+
+
+@font-face {
+    font-family: 'desafio-t';
+    src: url(desafio\ 10-elementos/idroid.otf);
+}
+@font-face {
+    font-family: 'titulos';
+    src: url(BebasNeue-Regular.ttf);
+}
+:root {
+--cor0: #C5EBD6;
+--cor1: #84E1AD;
+--cor2: #37C374;
+--cor3: #1A5C37;
+--cor4: #2D6948;
+--cor5: #2FA866;
+--fonte0:  Arial, Helvetica, sans-serif;
+--fonte1: 'titulos', sans-serif;
+--fonte2: 'desafio-t', sans-serif;
+}
+
+    *{
+        margin: 0px;
+    }
+   
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: var(--cor1);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.imagemres{
+   width: 100%;
+}
+#imagemgrande{
+    max-width: 60%;
+}
+
+header{
+    background-image: linear-gradient(180deg, var(--cor2),var(--cor3));
+    color: white;
+    font-family: var(--fonte0);
+ 
+   min-height: 0px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.466);
+    
+}
+header > h1{
+  text-align: center;
+  margin: 0px 0px 30px 0px;
+  padding-top: 30px;
+  font-family: var(--fonte1);
+  font-size: 2.5em;
+  text-shadow: 3px 2px 8px rgb(0 0 0 / 64%);
+  font-weight: 500;
+  letter-spacing: -1px;
+
+}
+
+header > h2{
+    font-size: 1em;
+    text-align: center;
+    padding-bottom: 20px;
+    font-weight: 100;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.644);
+}
+nav{
+    padding-bottom: 10px;
+}
+nav > a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px 10px 10px;
+    font-weight: 600;
+    transition-duration: .3s;
+   
+}
+nav > a:hover{
+    background-color: var(--cor3);
+    color: var(--cor2);
+  margin-bottom: 3px;
+  border-radius: 10px;
+}
+#conteudo{
+    background-color: white;
+   min-width: 320px;
+   max-width: 1200px;
+   margin: 0px auto 0px auto;
+   padding: 15px;
+   border-radius: 0px 0px 10px 10px;
+   box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.377);
+}
+main strong{
+    color: var(--cor5);
+    font-size: 1.1em;
+}
+#conteudo > h1{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: desafio-t;
+    color: var(--cor4);
+}
+#conteudo p{
+    text-align: justify;
+    text-indent: 20px;
+    margin: 15px 0px; 
+    line-height: 1.5em;
+}
+.imagemres{
+    width: 100%;
+ }
+ #imagemgrande{
+     max-width: 60%;
+ }
+ a.externo::after{
+    content: '\0020\1F517';
+ }
+ 
+.artigos > h2{
+    font-family: var(--fonte2);
+    color: var(--cor4);
+    background-image: linear-gradient(90deg,#C6EBD6, white 50% );
+    border-bottom: 10px;
+    border-top: 10px;
+}
+.artigos > p{
+    text-align: justify;
+    text-indent: 20px;
+}
+p > a{
+    color:  var(--cor4);
+    text-decoration: none;
+ font-weight: 700;
+ padding: 3px;
+ 
+}
+ p > a:hover{
+ background-color: var(--cor4);
+ color: white;
+padding: 3px;
+}
+
+
+.imagemdroid{
+
+max-width: 600px;
+min-width: 300px;
+display: block;
+ margin: auto;
+}
+#video{
+    position: relative;
+    background-color: var(--cor3);
+   height: 0px;
+   margin-left: -15px;
+   margin-right: -15px;
+   margin-bottom:  15px;
+   padding-bottom:  59%;
+}
+#video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+span > ul{
+    list-style-type: '\2714\0020\0020';
+    columns: 2;
+    list-style-position: outside;
+   
+}
+aside > h2{
+    background-color: var(--cor5);
+    color: white;
+    font-size: 1.0em;
+    padding: 10px 10px 10px 10px;
+    border-radius: 8px 8px 0px 0px ;
+   
+  
+}
+aside{
+    background-color: var(--cor0);
+    margin: 0px 0px 0px 0px;
+    border-radius: 10px 10px 8px 8px;
+    padding: 0px 0px 0px 0px;
+    box-shadow: 1px 1px 7px rgba(0, 0, 0, 0.301);
+    
+
+}
+
+span > p{
+    text-align: justify;
+    text-indent: 20px;
+    padding: 10px;
+}
+#final{
+    margin-top: 7px;
+}
+footer{
+    background-color: var(--cor3);
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px;
+    font-size: 0.7em;
+    color: white;
+}
+li > span{
+    text-decoration: underline dotted;
+    
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+    text-decoration: underline;
+    font-size: 1em;
+    color: white
+}
